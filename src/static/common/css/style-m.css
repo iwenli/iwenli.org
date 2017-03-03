@@ -1,0 +1,361 @@
+/* ---- base ---- */
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: #060606;
+    font-size: 1.3em;
+}
+
+html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    font: normal 75% Arial, Helvetica, sans-serif;
+}
+
+a:hover {
+    text-decoration: none;
+    cursor: point;
+}
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* ---- particles.js container ---- */
+
+#particles {
+    width: 100%;
+    height: 100%;
+    background-color: #2a3746;
+    color: #fff;
+    position: absolute;
+    background-size: cover;
+    background-image: url(../img/back.jpg);
+    background-position: top center;
+}
+
+.popWrap {
+    width: 50%;
+    margin: 0 auto;
+    position: absolute;
+}
+
+@media screen and (orientation:portrait) {
+    .headImg-Wrap {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .go {
+        width: 8%;
+    }
+}
+
+@media screen and (orientation:landscape) {
+    .headImg-Wrap {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .go {
+        width: 5%;
+    }
+}
+
+.headImg {
+    width: 100%;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 5px;
+    position: relative;
+    border: #f5ad18 1px solid;
+    margin: 0 auto;
+}
+
+.slot {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+}
+
+.headImg > span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    line-height: 50px;
+    text-decoration: center;
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.btn {
+    width: 100%;
+    line-height: 300%;
+    padding-top: 5%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.btn > a {
+    background: #f29807;
+    width: 100%;
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+.dn {
+    display: none;
+}
+
+.go {
+    position: fixed;
+    right: 5px;
+    top: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    z-index: 1000;
+}
+
+.go > img {
+    width: 90%;
+}
+
+.content {
+    list-style-type: none;
+    padding: 0 5px;
+    margin: 0;
+    overflow-y: auto;
+    position: absolute;
+    top: 5px;
+    bottom: 0px;
+    width: 100%;
+}
+
+.content-end {
+    background: rgba(0, 0, 0, .6);
+    top: 0;
+    padding: 10px 0;
+}
+
+.line {
+    background: url(../../../static/common/img/line-bg.png) repeat-y 129px 0;
+}
+
+.content .wrapper {
+    position: relative;
+    margin: 0 auto;
+}
+
+.content .main .title {
+    position: absolute;
+    line-height: 40px;
+    padding-left: 60px;
+    left: 110px;
+    top: 0;
+    color: #58a6fb;
+    font-size: 1.55em;
+    background: url(../../../static/common/img/clock.png) no-repeat left top;
+}
+
+.content .main .year {
+    position: relative;
+    z-index: 100;
+}
+
+.content .main .year h2 {
+    height: 40px;
+    width: 270px;
+    font-size: 1.55em;
+    line-height: 40px;
+    text-align: right;
+    padding-right: 180px;
+}
+
+.content .main .year h2 a {
+    color: #58a6fb;
+}
+
+.content .main .year h2 i {
+    display: block;
+    position: relative;
+    height: 0;
+    width: 0;
+    left: 100px;
+    top: -20px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: #59a7fb transparent transparent transparent;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    -webkit-transform-origin: 6px 3px;
+    -moz-transform-origin: 6px 3px;
+    -ms-transform-origin: 6px 3px;
+    -o-transform-origin: 6px 3px;
+    transform-origin: 6px 3px
+}
+
+.content .main .year .list {
+    /*margin:10px 0;*/
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: height 1s cubic-bezier(0.025, 0.025, 0.000, 1.115), opacity 1s;
+    -moz-transition: height 1s cubic-bezier(0.025, 0.025, 0.000, 1.115), opacity 1s;
+    -ms-transition: height 1s cubic-bezier(0.025, 0.025, 0.000, 1.115), opacity 1s;
+    -o-transition: height 1s cubic-bezier(0.025, 0.025, 0.000, 1.115), opacity 1s;
+    transition: height 1s cubic-bezier(0.025, 0.025, 0.000, 1.115), opacity 1s
+}
+
+.content .main .year .list ul {
+    bottom: 0;
+}
+
+.content .main .year .list ul li {
+    background: url(../../../static/common/img/circle-l.png) no-repeat 115px 31px;
+    color: #a1a4b8;
+}
+
+.content .main .year .list ul li.highlight {
+    background-image: url(../../../static/common/img/circle-h.png);
+}
+
+.cls {
+    zoom: 1;
+}
+
+.cls:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.content .main .year .list ul li.highlight .date, .content .main .year .list ul li.highlight .intro {
+    color: #ec6a13;
+}
+
+.content .main .year .list ul li .version {
+    display: block;
+    clear: left;
+    width: 100%;
+    line-height: 32px;
+    text-align: right;
+    background: url(../../../static/common/img/line-bg.png) repeat-y 129px 0;
+}
+
+.content .main .year .list ul li .date {
+    float: left;
+    display: block;
+    clear: left;
+    width: 150px;
+    text-align: right;
+    font-size: 1.16em;
+    line-height: 24px;
+    padding-right: 40px;
+    color: #63d029;
+}
+
+.content .main .year .list ul li .more {
+    margin: 0 0 0 129px;
+    padding: 25px 0 0 25px;
+    line-height: 24px;
+    background: url(../../../static/common/img/line-bg.png) repeat-y 0 0;
+}
+
+.more > p {
+    word-break: break-word;
+    text-indent: -10px;
+}
+
+.more a {
+    color: #a1a4b8;
+}
+
+.content .main .year .list ul li .intro {
+    font-size: 1.16em;
+    color: #63d029;
+    display: flex;
+    line-height: 24px;
+}
+
+.content .wrapper:first-child .main .year.close h2 i {
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg)
+}
+
+.content .wrapper:first-child .main .year.close .list {
+    opacity: 0;
+    height: 0!important;
+}
+
+.footer {
+    z-index: 10000;
+    top: 92%;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.footer > p {
+    color: white;
+    display: inline-block;
+}
+
+.footer > a {
+    color: white;
+}
+
+
+/*滚动条*/
+
+
+/*定义滚动条宽高及背景，宽高分别对应横竖滚动条的尺寸*/
+
+.scrollbar::-webkit-scrollbar {
+    width: 3px;
+    /*height: 8px;
+    background-color: red;*/
+}
+
+
+/*定义滚动条的轨道，内阴影及圆角*rgba(255,255,255,.2);*/
+
+.scrollbar::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.5);
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+
+/*定义滑块，内阴影及圆角background-color: #555;*/
+
+.scrollbar::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.5);
+    background: yellow;
+    /* rgba(0,0,0,0.3); */
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(0, 0, 0, 0.3);
+}

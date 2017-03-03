@@ -1,0 +1,147 @@
+
+.key-wrapper {
+    /*min-width: 760px;
+    max-width: 800px;*/
+    margin: 0 auto;
+    margin-top: 17%;
+}
+.key-wrapper h2 {
+    text-align: center;
+    padding-bottom: 30px;
+    color: rgba(0, 0, 0, .5);
+    font-size: 1.2em;
+}
+
+.key-wrapper a {
+    color: rgb(100, 100, 100);
+    text-decoration: none;
+}
+
+.key-wrapper a, .key-wrapper span {
+    cursor: pointer; 
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    transition: .5s;
+}
+.key-wrapper h2 span {
+    color: rgba(250, 250, 250, .8);
+    margin-left: 20px;
+}
+
+.key-wrapper a:hover, .key-wrapper span:hover {
+    color: rgb(255, 255, 255);
+    border-bottom: 0.25vmin dotted rgb(75, 75, 75);
+}
+
+
+.key-wrapper ul {
+    text-align: center;
+    white-space: nowrap;
+}
+
+.key-wrapper li {
+    display: inline-block;
+    margin: 0.8% 0.5%;
+    width: 7.5%;
+    height: 10%;
+    padding: 0.3%;
+    min-height: 8.5%;
+    border: 0.15em solid rgb(75, 75, 75);
+    border-radius: 0.5em;
+    line-height: 3em;
+    text-align: center;
+    text-transform: uppercase;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    transition: .5s;
+}
+
+.key-wrapper li:hover {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+
+.key-wrapper [data-code="32"]
+/*SPACEBAR*/
+
+{
+    width: 40vmin;
+}
+
+.key-wrapper .active {
+    -webkit-transition: 0s;
+    -moz-transition: 0s;
+    -ms-transition: 0s;
+    transition: 0s;
+    transform: scale(1.15);
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+.key-wrapper .drum {
+    border-color: rgb(0, 255, 100);
+    color: rgb(0, 255, 100);
+}
+
+.key-wrapper .drum.active {
+    color: rgb(75, 75, 75);
+    background-color: rgb(0, 255, 100);
+}
+
+.key-wrapper .pad {
+    border-color: rgb(255, 225, 0);
+    color: rgb(255, 225, 0);
+}
+
+.key-wrapper .pad.active {
+    color: rgb(75, 75, 75);
+    background-color: rgb(255, 225, 0);
+}
+
+.key-wrapper .loop {
+    border-color: rgb(255, 100, 0);
+    color: rgb(255, 100, 0);
+}
+
+.key-wrapper .loop.active {
+    color: rgb(75, 75, 75);
+    background-color: rgb(255, 100, 0);
+}
+
+.key-wrapper .bass {
+    border-color: rgb(255, 0, 75);
+    color: rgb(255, 0, 75);
+}
+
+.key-wrapper .bass.active {
+    color: rgb(75, 75, 75);
+    background-color: rgb(255, 0, 75);
+}
+
+.key-wrapper .synth {
+    border-color: rgb(65, 22, 95);
+    color: rgb(65, 22, 95);
+}
+
+.key-wrapper .synth.active {
+    color: rgb(75, 75, 75);
+    background-color: rgb(65, 22, 95);
+}
+
+.key-wrapper .effect {
+    border-color: rgb(0, 150, 255);
+    color: rgb(0, 150, 255);
+}
+
+.key-wrapper .effect.active {
+    color: rgb(75, 75, 75);
+    background-color: rgb(0, 150, 255);
+}
