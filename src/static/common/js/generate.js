@@ -10,37 +10,7 @@
 // @homepage		http://iwenli.org
 // ==/UserScript==
 
-//=======START=======
-
-
-var option = {
-    'title': '个人履历',
-    'list': [
-        {
-            'object': '', 'obj_list': [
-
-            ]
-        },
-        {
-            'object': '2013年', 'obj_list': [
-                { 'ismark': true, 'child_obj_key': '3月26日', 'child_obj_value': 'js代码大事件记录', 'child_obj_more': ['手机号：123456', 'qq:23486158', 'GitHub:https://github.com/iwenli'] },
-                { 'ismark': false, 'child_obj_key': '3月19日', 'child_obj_value': '全新会员卡3.0、微官网3.0、微商城2.0上线，渠道统计模块上线！', 'child_obj_more': ['手机号：123456', 'qq:23486158', 'GitHub:https://github.com/iwenli'] }
-            ]
-        },
-        {
-            'object': '2012年', 'obj_list': [
-                { 'ismark': true, 'child_obj_key': '3月26日', 'child_obj_value': 'js代码大事件记录', 'child_obj_more': ['手机号：123456', 'qq:23486158', 'GitHub:https://github.com/iwenli'] },
-                { 'ismark': false, 'child_obj_key': '3月19日', 'child_obj_value': '全新会员卡3.0、微官网3.0、微商城2.0上线，渠道统计模块上线！', 'child_obj_more': ['手机号：123456', 'qq:23486158', 'GitHub:https://github.com/iwenli'] }
-            ]
-        },
-        {
-            'object': '2011年', 'obj_list': [
-                { 'ismark': true, 'child_obj_key': '3月26日', 'child_obj_value': 'js代码大事件记录', 'child_obj_more': ['手机号：123456', 'qq:23486158', 'GitHub:https://github.com/iwenli'] },
-                { 'ismark': false, 'child_obj_key': '3月19日', 'child_obj_value': '全新会员卡3.0、微官网3.0、微商城2.0上线，渠道统计模块上线！', 'child_obj_more': ['手机号：123456', 'qq:23486158', 'GitHub:https://github.com/iwenli'] }
-            ]
-        }
-    ]
-};
+//=======START======= 
 
 function generate(info) {
     var html = '';

@@ -70,7 +70,7 @@ function init() {
   else {
     $('.main')[0].innerHTML = _fistHtml;
     $(".headImg").hover(function () {
-      $(".qr").animate({ width: '100%', top: '0%', left: '0%' },300);
+      $(".qr").animate({ width: '100%', top: '0%', left: '0%' }, 300);
       $(this).find('span').hide();
     }, function () {
       $(".qr").animate({ width: '0', top: '50%', left: '50%' });
@@ -79,15 +79,7 @@ function init() {
     setTimeout(function () {
       timer = setInterval(autoKeyDown, 300);
     }, 2000);
-    $(".main .year .list").each(function (e, target) {
-      var $target = $(target),
-        $ul = $target.find("ul");
-      $target.height($ul.outerHeight()), $ul.css("position", "absolute");
-    });
-    $(".main .year>h2>a").click(function (e) {
-      e.preventDefault();
-      $(this).parents(".year").toggleClass("close");
-    });
+
     $('.btn').bind('click', 'a', function () {
       var d = $(this).find('a');
       if (d.text() == _msg[0]) {
@@ -95,6 +87,17 @@ function init() {
         $('.main')[0].innerHTML = generateInfo(_info);
         clearInterval(timer);
         timer = null;
+
+        $(".main .year .list").each(function (e, target) {
+          var $target = $(target),
+            $ul = $target.find("ul");
+          $target.height($ul.outerHeight()), $ul.css("position", "absolute");
+        });
+        $(".main .year>h2>a").click(function (e) {
+          e.preventDefault();
+          $(this).parents(".year").toggleClass("close");
+        });
+        
       } else {
         d.text(_msg[0]);
         $('.main')[0].innerHTML = _fistHtml;
