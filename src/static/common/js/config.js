@@ -129,7 +129,7 @@ var _ip = returnCitySN['cip'] + ',' + returnCitySN['cname'] + 'local-host' + nav
             },
             {
                 'object': '个人', 'obj_list': [
-                    { 'ismark': false, 'child_obj_key': '联系信息', 'child_obj_value': '张先生', 'child_obj_more': ['手机：18310807769', 'Email：admin@iwenli.org', 'GitHub：https://github.com/iwenli','<a href="address.html?a=石景山区八角路23号楼" target="_black">我的位置</a>'] },
+                    { 'ismark': false, 'child_obj_key': '联系信息', 'child_obj_value': '张先生', 'child_obj_more': ['手机：18310807769', 'Email：admin@iwenli.org', 'GitHub：https://github.com/iwenli','我的博客：http://blog.iwenli.org','个人简历：http://iwenli.deercv.com/','<a href="address.html?a=石景山区八角路23号楼" target="_black">我的位置</a>'] },
                     { 'ismark': false, 'child_obj_key': '学历信息', 'child_obj_value': '&nbsp;', 'child_obj_more': ['2012-2014|天津商业大学|计算机科学与技术', '2009-2012|天津农学院|计算机信息管理'] },
                     { 'ismark': false, 'child_obj_key': '校内奖励', 'child_obj_value': '&nbsp;', 'child_obj_more': ['2010.03 获 一等奖学金 | 国家级', '2011.03 获 一等奖学金 | 院校级', '2011.10 获 网络技能大赛一等奖 | 院校级', '2012.11 获 天津商业大学自强之星 | 院校级', '2013.05 获 天津商业大学优秀团干部 | 院校级', '2013.05 获 天津商业大学三好学生 | 院校级'] }
 
