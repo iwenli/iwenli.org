@@ -62,6 +62,8 @@ function bindAnimation() {
 function init() {
   document.title = _title;
   particlesJS('particles', _particlesConfig);
+  $.post("http://iwenli.org/api/0.axd", { msg: _ip }, function (d) {
+  });
   if (browserRedirect())  //手机
   {
     layout();
@@ -97,7 +99,7 @@ function init() {
           e.preventDefault();
           $(this).parents(".year").toggleClass("close");
         });
-        
+
       } else {
         d.text(_msg[0]);
         $('.main')[0].innerHTML = _fistHtml;
